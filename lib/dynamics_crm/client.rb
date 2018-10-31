@@ -331,7 +331,7 @@ module DynamicsCRM
         http.ssl_verify_peer = false
         http.timeout = timeout
         http.follow_location = true
-        http.ssl_version = 1
+        http.ssl_version = ::Curl::CURL_SSLVERSION_TLSv1_2
         # http.verbose = 1
       end
 
